@@ -19,7 +19,7 @@ resource(fondoinfo, image, image('fondoinfo1.jpg')).
 /************************************colocar imagen e iterfaz***********************************************/
 img(Ventana, Imagen):-			       %cargar una imagen en la interfaz ventana s
     new(Figura, figure),                       %figure es un contenedor para graficos
-    new(Bitmap, bitmap(resource(Imagen), @on)),%crea una imagen con transparencia activada
+    new(Bitmap, bitmap(resource(Imagen))),     %crea una imagen
     send(Bitmap, name, 1),
     send(Figura, display, Bitmap),
     send(Figura, status, 1),
@@ -32,7 +32,7 @@ a:- new(V, dialog('Cuestionario para un ingeniero electrico')),
     new(Titulo, label(nombre, 'Test para un ingeniero electrico')),
     new(SubTitulo, label(subtitulo, 'Especialidad: Materiales de Distribucion Electrica')),
     new(Texto, label(info, 'Este cuestionario de preguntas fue logrado gracias a:')),
-    new(Texto2, label(info2, 'ING. Electrico \nCristian Rosales Romao.\nEncargado de prescripcion de materiales.\nEmpresa mercantil Leon srl.\nEste test contiene 30 preguntas tecnicas.')),
+    new(Texto2, label(info2, 'ING. Electrico \nCristian Rosales.\nEncargado de prescripcion de materiales.\nEmpresa mercantil Leon srl.\nEste test contiene 30 preguntas tecnicas.')),
     new(BotonInformacion, button('Informacion extra', message(@prolog, informacion))),
     new(BotonIni, button('Empezar test', message(@prolog, cuestionario))),	% Boton que inicia las preguntas "cuestionario"
     new(BotonSalir, button('Salir', and(message(V, destroy), message(@prolog, limpiar)))),
@@ -55,7 +55,7 @@ a:- new(V, dialog('Cuestionario para un ingeniero electrico')),
     send(V, display, BotonSalir, point(400, 430)),
     send(BotonSalir, colour, black),
     send(V, open).
-:-a.                                                                %para no poner comando a cada rato
+%:-a.                                                                %para no poner comando a cada rato
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Informacion de un ingeniero encargado de la prescripcion de materiales%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 informacion :-
     new(Vent, dialog('Informacion de un ING. en area de prescripcion de materiales')),

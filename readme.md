@@ -13,11 +13,10 @@ Para poder desarrollar este proyecto se entrevisto por medio de mensajes y llama
 
 ## Informacion 
    - **ING. Electrico**
-   - **Cristian Rosales Romao.**
+   - **Cristian Rosales**
    - **Encargado de prescripción de materiales.**
    - **Empresa mercantil León srl.**
    - **Ubicación av. Melchor pinto, primer anillo.**
-   - **numero: +591++++++++**
 
 ## Descripcion 
 
@@ -29,3 +28,10 @@ Ejecutar el codigo "Test tecnico para ingeniero  electrico" con el comando.
 >>>>>>COMANDO: " a. " 
 
  ya no es necesario el comando "a." a menos de que le hayas dado  "salir".
+ 
+ 
+### ejecutando proyecto, interfaz 1 (dashboard)
+![imagen de mi proyecto](imagenes/img1.jpeg "imagen de mi proyecto final dashboard")
+
+### ejecutando proyecto, interfaz 2 (resultado de la prueba)
+![imagen de mi proyecto](imagenes/img2.jpeg "imagen de mi proyecto final resultado")
